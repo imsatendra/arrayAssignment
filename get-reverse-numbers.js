@@ -13,4 +13,3 @@ function getReverseNumber(numbers){
 
 }
 console.log(getReverseNumber(numbers));
-Satendra
