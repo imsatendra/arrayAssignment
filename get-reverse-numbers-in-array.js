@@ -5,4 +5,7 @@ function getReverseOfArray(number) {
     numbers.forEach(number => {
         reverseNumbers.unshift(number);
     })
+    return reverseNumbers;
 }
+
+console.log(getReverseOfArray(numbers));
