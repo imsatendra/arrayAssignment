@@ -8,7 +8,7 @@ function countNumbersBelowThreshold(numbers,threshold) {
             countOfNumbersBelowThreshold++;
         }
     })
-    return  countOfNumbersBelowThreshold;
+    return countOfNumbersBelowThreshold;
 }
 
 console.log(countNumbersBelowThreshold(numbers,threshold));
