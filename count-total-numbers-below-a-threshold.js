@@ -1,6 +1,7 @@
 const numbers = [1,2,3,4,5,6,7,8,9];
-const threshold = 4
-function countBelowNumbers(numbers, threshold) {
+const countOfNumbersBelowThreshold = 4;
+
+function countNumbersBelowThreshold(numbers , threshold) {
     let countBelowTheNumber=0;
     numbers.forEach(number => {
         if(number < threshold) {
@@ -10,4 +11,4 @@ function countBelowNumbers(numbers, threshold) {
     return countBelowTheNumber;
 }
 
-console.log(countBelowNumbers(numbers,threshold));
+console.log(countNumbersBelowThreshold(numbers,countOfNumbersBelowThreshold));
