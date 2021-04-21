@@ -10,5 +10,5 @@ function getUniqueElements(elements) {
     return uniqueElements; 
 }
 
-console.log(getUniqueElements(numbers));
+module.exports = { getUniqueElements }
 
