@@ -1,16 +1,15 @@
 const array1 = [1,2,3,4,5];
-const array2 =[2,3,4,5,];
+const array2 =[2,3,4,5];
 
-function checkSubSet(array1, array2) {
-    let isSubSet = true;
-    array2.forEach(number => {
+function checkSubset(array1, array2) {
+    let isSubset = true;
+    return array2.every(number => {
         if(array1.includes(number)) {
-            return isSubSet;
+            return isSubset;
         } else {
-            isSubSet = false;
+            return false;
         }  
     })
-    return isSubSet;
 }
 
-console.log(checkSubSet(array1, array2));
+console.log(checkSubset(array1, array2));
