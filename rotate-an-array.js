@@ -1,16 +1,13 @@
 const array = [1,2,3,4,5];
-const indexValue = 2;
+const rotateFrom = 2;
 
-function rotateOfAnArray(array, indexValue){
-
-    const newArray = [];
-    for(index = indexValue; index < array.length; index++) {
-        newArray.push(array[index]);
+function rotateOfAnArray(array, rotateFrom) {
+    const rotatedArray = [];
+    for(index = 0; index < rotateFrom; index++) {
+        array.push(array.shift());
     }
-    for(index = 0; index < indexValue; index++) {
-        newArray.push(array[index]);
-    }
-    return newArray;
+    return array;
 }
 
-console.log(rotateOfAnArray(array, indexValue));
+console.log(rotateOfAnArray(array, rotateFrom));
+
