@@ -12,4 +12,4 @@ function getOddNumbers(numbers) {
  return oddnumbers;
 }
 
-getOddNumbers(numbers);
+module.exports = { getOddNumbers };
